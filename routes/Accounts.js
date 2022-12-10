@@ -3,7 +3,7 @@ const router = express.Router();
 // import { v4 as uuidv4 } from "uuid";
 import fs from "fs";
 
-let Accounts = JSON.parse(fs.readFileSync("../db/Accounts.json"));
+let Accounts = JSON.parse(fs.readFileSync("./db/Accounts.json"));
 
 router.get("/", (req, res) => {
   try {
@@ -33,7 +33,7 @@ const addAccount= (req, res) => {
       console.log("post route reached");
       const Account = req.body;
       Accounts.push( ...Account );
-      fs.writeFileSync("../db/Accounts.json", JSON.stringify([...Accounts]));
+      fs.writeFileSync("./db/Accounts.json", JSON.stringify([...Accounts]));
       res.send(`Account added to the data base`);
     } catch (e) {
       res.status(400).send({ error: e.message });
