@@ -1,6 +1,6 @@
 import express from "express";
 import userRoutes from "../routes/user.js "
-import AccountRoutes from "../routes/Accounts.js"
+// import AccountRoutes from "../routes/Accounts.js"
 // import fs from "fs";
 
 
@@ -12,7 +12,7 @@ app.use(express.json())
 
 // all routes in here are starting with "/users"
 app.use("/users", userRoutes)
-app.use("/Accounts",AccountRoutes)
+// app.use("/Accounts",AccountRoutes)
 
 // let data = JSON.parse(fs.readFileSync("./db/users.json"));
 // console.log(data);
