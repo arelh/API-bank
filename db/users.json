@@ -8,19 +8,19 @@
     {
         "id": 1,
         "name": "ssssss",
-        "cash": -10,
+        "cash": -100,
         "credit": 100
     },
     {
         "id": 2,
         "name": "dan",
-        "cash": 0,
+        "cash": 50,
         "credit": 0
     },
     {
         "id": 3,
         "name": "bob",
-        "cash": 0,
+        "cash": 200,
         "credit": 0
     }
 ]
